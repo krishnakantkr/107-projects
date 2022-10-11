@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<script>
+  $(document).ready(function(){
+    $('i').click(function(){
+      $('ul').toggleClass('ul_show');
+      $('section').toggleClass('slide_image');
+    });
+    $('li').click(function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+  });
+</script>
+</head>
+<body>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration:  none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: montserrat;
+    }
+    ul{
+      position: fixed;
+      top:0;
+      left:0;
+      margin-left: -240px;
+      width: 240px;
+      background: #1e1e1e;
+      height:100vh;
+      overflow-y: auto;
+      transition: all .3s;
+
+    }
+    ul li{
+      height: 65px;
+      outline: none;
+    }
+    ul li a{
+      display:block;
+      height: 100%;
+      width: 100%;
+      line-height: 70px;
+      font-size: 20px;
+      color: white;
+      padding-left: 10%;
+      background: #1e1e1e;
+      border-top: 1px solid rgba(255,255,255,.1);
+      border-bottom: 1px solid black;
+      border-left: 5px solid transparent;
+    }
+    li a.contact{
+      border-bottom: 1px solid rgba(0,0,0,.5);
+    }
+    .active a{
+      color: #B93632;
+      border-left: 5px solid #B93632;
+      background: #1B1B1B;
+    }
+    section{
+      margin-left:0px;
+      transition: all .3s;
+    }
+    i{
+      position:fixed;
+      margin: 20px 25px;
+      font-size: 40px;
+      color: orangered;
+      cursor: pointer;
+    }
+    .sec1{
+      margin-left: -20px;
+      /* https://www.ikea.com/global/assets/navigation/images/trotten-system-55989.jpeg?imwidth=400 */
+      background: url("https://www.ikea.com/global/assets/navigation/images/trotten-system-55989.jpeg") no-repeat ;
+      background-size: cover;
+      height: 100vh;
+    }
+    .sec2{
+      margin-left: -20px;
+      background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/47aa61101334781.5f1c660e2b883.jpg") no-repeat ;
+      background-size: cover;
+      height: 70vh;
+      background-size: 50rem;
+      background-position: 50%;
+    }
+    .sec3{
+      margin-left: -20px;
+      background: url("https://www.photo.gallery/content/1.index/x3-photo-gallery-website.jpg") no-repeat ;
+      background-size: cover;
+      height: 70vh;
+      background-size: 50rem;
+      background-position: 50%;
+    }
+    .sec4{
+      margin-left: -20px;
+      background: url("https://socialwebschool.com/wp-content/uploads/2019/03/Website-Design.jpg?imwidth=900") no-repeat ;
+      background-size: cover;
+      height: 70vh;
+      background-size: 50rem;
+      background-position: 50%;
+    }
+    .sec5{
+      margin-left: -15px;
+      background: url("https://www.drupal.org/files/project-images/Website%20Feedback-Icon.png") no-repeat ;
+      background-size: cover;
+      height: 50vh;
+      background-size: 20rem;
+      background-position: 50%;
+     
+    }
+    .sec6{
+      background: url("https://www.harajukusogo.jp/images/backup.jpg?crc=3859391138") no-repeat ;
+      background-size: cover;
+      height: 70vh;
+      background-size: 50rem;
+      background-position: 50%;
+     
+    }
+    .sec7{
+      margin-left: -15px;
+      background: url("https://www.drupal.org/files/project-images/Website%20Feedback-Icon.png?imwidth=10px") no-repeat ;
+      background-size: cover;
+      height: 100vh;
+      margin: 15%;
+    }
+    h1{
+      font-size: 40px;
+      padding: 15px 20px;
+    }
+    p{
+      padding: 0 20px 10px 20px;
+      text-align: center;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    .ul_show{
+      margin-left: 0px;
+    }
+    .slide_image{
+      margin-left: 260px;
+    }
+
+  </style>
+<ul>
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#gallery">Gallery</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#feedback">Feedback</a></li>
+  <li><a  href="#contact" class="contact" href="#">Contact</a></li>
+</ul>  
+<section>
+  <i class="fas fa-bars"></i>
+  <div class="sec1"> </div>
+    <h1 id="about">About Section</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sapiente reiciendis et ipsum consequuntur eos illum amet aliquam, ratione molestiae tempora voluptate dolores officiis ut eum quas deserunt minima ipsa assumenda vel asperiores harum placeat! Sapiente molestiae officiis, repellendus soluta dolores modi accusamus. Velit minus magni, et nesciunt distinctio perferendis.</p>
+ 
+  
+  <div  class="sec2" id="portfolio"> </div>
+    <h1 >Portfolio Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique necessitatibus est dolorem, accusantium quam pariatur vero assumenda modi mollitia fugiat nisi? Nihil dolorem totam, hic, repudiandae doloremque eveniet dicta deleniti facilis iure cupiditate accusamus nam. Totam minima quae voluptatibus, ducimus officia, facilis facere iusto sequi distinctio cupiditate eum dicta voluptate adipisci deleniti, architecto laboriosam animi est! Sit, harum maxime quia tempora itaque numquam voluptatem quam quo odio ullam aspernatur vitae inventore non, at iste culpa reprehenderit sapiente aperiam porro incidunt odit debitis minus similique? Aspernatur voluptatem sequi laboriosam maxime. Maxime dolores id temporibus, totam facere quis exercitationem reprehenderit magni tenetur odit perferendis reiciendis, soluta, molestias veniam voluptatem. Accusamus in ab veniam magni omnis eum doloremque aliquid repudiandae eligendi quis explicabo numquam odit ipsum, totam odio dolorem quisquam molestiae ad earum. Perspiciatis, quam. Quam, numquam? Amet, architecto expedita ducimus rem debitis possimus atque nihil vel, id perferendis consequuntur necessitatibus quas illum quibusdam nisi ad sequi vitae earum? Debitis quisquam eius reprehenderit iste dolore! In nihil ipsum, velit cupiditate commodi distinctio exercitationem suscipit esse quia illo quos vero veniam fuga ullam molestiae asperiores? Harum unde nostrum pariatur minima nihil ullam eum impedit similique molestias vel quibusdam, a rem atque doloribus ad! Magni?</p>
+ 
+  <div class="sec3" id="gallery">  </div>
+    <h1 >Gallery Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique necessitatibus est dolorem, accusantium quam pariatur vero assumenda modi mollitia fugiat nisi? Nihil dolorem totam, hic, repudiandae doloremque eveniet dicta deleniti facilis iure cupiditate accusamus nam. Totam minima quae voluptatibus, ducimus officia, facilis facere iusto sequi distinctio cupiditate eum dicta voluptate adipisci deleniti, architecto laboriosam animi est! Sit, harum maxime quia tempora itaque numquam voluptatem quam quo odio ullam aspernatur vitae inventore non, at iste culpa reprehenderit sapiente aperiam porro incidunt odit debitis minus similique? Aspernatur voluptatem sequi laboriosam maxime. Maxime dolores id temporibus, totam facere quis exercitationem reprehenderit magni tenetur odit perferendis reiciendis, soluta, molestias veniam voluptatem. Accusamus in ab veniam magni omnis eum doloremque aliquid repudiandae eligendi quis explicabo numquam odit ipsum, totam odio dolorem quisquam molestiae ad earum. Perspiciatis, quam. Quam, numquam? Amet, architecto expedita ducimus rem debitis possimus atque nihil vel, id perferendis consequuntur necessitatibus quas illum quibusdam nisi ad sequi vitae earum? Debitis quisquam eius reprehenderit iste dolore! In nihil ipsum, velit cupiditate commodi distinctio exercitationem suscipit esse quia illo quos vero veniam fuga ullam molestiae asperiores? Harum unde nostrum pariatur minima nihil ullam eum impedit similique molestias vel quibusdam, a rem atque doloribus ad! Magni?</p>
+
+  <div class="sec4" id="services">  </div>
+    <h1 >Services Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique necessitatibus est dolorem, accusantium quam pariatur vero assumenda modi mollitia fugiat nisi? Nihil dolorem totam, hic, repudiandae doloremque eveniet dicta deleniti facilis iure cupiditate accusamus nam. Totam minima quae voluptatibus, ducimus officia, facilis facere iusto sequi distinctio cupiditate eum dicta voluptate adipisci deleniti, architecto laboriosam animi est! Sit, harum maxime quia tempora itaque numquam voluptatem quam quo odio ullam aspernatur vitae inventore non, at iste culpa reprehenderit sapiente aperiam porro incidunt odit debitis minus similique? Aspernatur voluptatem sequi laboriosam maxime. Maxime dolores id temporibus, totam facere quis exercitationem reprehenderit magni tenetur odit perferendis reiciendis, soluta, molestias veniam voluptatem. Accusamus in ab veniam magni omnis eum doloremque aliquid repudiandae eligendi quis explicabo numquam odit ipsum, totam odio dolorem quisquam molestiae ad earum. Perspiciatis, quam. Quam, numquam? Amet, architecto expedita ducimus rem debitis possimus atque nihil vel, id perferendis consequuntur necessitatibus quas illum quibusdam nisi ad sequi vitae earum? Debitis quisquam eius reprehenderit iste dolore! In nihil ipsum, velit cupiditate commodi distinctio exercitationem suscipit esse quia illo quos vero veniam fuga ullam molestiae asperiores? Harum unde nostrum pariatur minima nihil ullam eum impedit similique molestias vel quibusdam, a rem atque doloribus ad! Magni?</p>
+
+  <div class="sec5" id="feedback"></div>
+    <h1 >Feedback Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique necessitatibus est dolorem, accusantium quam pariatur vero assumenda modi mollitia fugiat nisi? Nihil dolorem totam, hic, repudiandae doloremque eveniet dicta deleniti facilis iure cupiditate accusamus nam. Totam minima quae voluptatibus, ducimus officia, facilis facere iusto sequi distinctio cupiditate eum dicta voluptate adipisci deleniti, architecto laboriosam animi est! Sit, harum maxime quia tempora itaque numquam voluptatem quam quo odio ullam aspernatur vitae inventore non, at iste culpa reprehenderit sapiente aperiam porro incidunt odit debitis minus similique? Aspernatur voluptatem sequi laboriosam maxime. Maxime dolores id temporibus, totam facere quis exercitationem reprehenderit magni tenetur odit perferendis reiciendis, soluta, molestias veniam voluptatem. Accusamus in ab veniam magni omnis eum doloremque aliquid repudiandae eligendi quis explicabo numquam odit ipsum, totam odio dolorem quisquam molestiae ad earum. Perspiciatis, quam. Quam, numquam? Amet, architecto expedita ducimus rem debitis possimus atque nihil vel, id perferendis consequuntur necessitatibus quas illum quibusdam nisi ad sequi vitae earum? Debitis quisquam eius reprehenderit iste dolore! In nihil ipsum, velit cupiditate commodi distinctio exercitationem suscipit esse quia illo quos vero veniam fuga ullam molestiae asperiores? Harum unde nostrum pariatur minima nihil ullam eum impedit similique molestias vel quibusdam, a rem atque doloribus ad! Magni?</p>
+  
+  <div class="sec6" id="contact"> </div>
+    <h1 >Contact Section</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique necessitatibus est dolorem, accusantium quam pariatur vero assumenda modi mollitia fugiat nisi? Nihil dolorem totam, hic, repudiandae doloremque eveniet dicta deleniti facilis iure cupiditate accusamus nam. Totam minima quae voluptatibus, ducimus officia, facilis facere iusto sequi distinctio cupiditate eum dicta voluptate adipisci deleniti, architecto laboriosam animi est! Sit, harum maxime quia tempora itaque numquam voluptatem quam quo odio ullam aspernatur vitae inventore non, at iste culpa reprehenderit sapiente aperiam porro incidunt odit debitis minus similique? Aspernatur voluptatem sequi laboriosam maxime. Maxime dolores id temporibus, totam facere quis exercitationem reprehenderit magni tenetur odit perferendis reiciendis, soluta, molestias veniam voluptatem. Accusamus in ab veniam magni omnis eum doloremque aliquid repudiandae eligendi quis explicabo numquam odit ipsum, totam odio dolorem quisquam molestiae ad earum. Perspiciatis, quam. Quam, numquam? Amet, architecto expedita ducimus rem debitis possimus atque nihil vel, id perferendis consequuntur necessitatibus quas illum quibusdam nisi ad sequi vitae earum? Debitis quisquam eius reprehenderit iste dolore! In nihil ipsum, velit cupiditate commodi distinctio exercitationem suscipit esse quia illo quos vero veniam fuga ullam molestiae asperiores? Harum unde nostrum pariatur minima nihil ullam eum impedit similique molestias vel quibusdam, a rem atque doloribus ad! Magni?</p>
+ 
+</section>
+
+</body>
+</html>
