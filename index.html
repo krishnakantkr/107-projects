@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>107-Projects Html-Css-Js</title>
+</head>
+<body>
+  <style>
+    
+    body{
+     background: linear-gradient(217deg, rgba(206, 250, 220), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(219, 208, 166), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(221, 167, 114), rgba(0,0,255,0) 70.71%);
+    }
+    .nav{
+      background:   linear-gradient(336deg, rgba(221, 167, 114), rgba(0,0,255,0) 70.71%),
+      linear-gradient(127deg, rgba(219, 208, 166), rgba(0,255,0,0) 70.71%),
+      linear-gradient(217deg, rgba(206, 250, 220), rgba(255,0,0,0) 70.71%);
+      ;
+      width: 80vmax;
+      position:absolute;
+      height: 2rem;
+      left: 5%;
+     /* border: 1px solid red; */
+      top:2%;
+      color:  rgb(216, 125, 64);
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+    }
+    .nav-header{
+      margin-top: -0.0rem;
+    }
+    .container{
+      position:absolute;
+      left: 5%;
+      top:5%;
+      transform: translate(-50%, -50%);
+      /* border: 1px solid red; */
+      font-family: arial;
+      text-align: center;
+    }
+    .projects{
+      width: 90vmax;
+      position:absolute;
+      height: 100vmax;
+      left: 3%;
+     /* border: 1px solid red; */
+      top:2rem;
+      color:  rgb(216, 125, 64);
+      text-align: center;
+    }
+    .project{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 72vmax;
+      height: 20%;
+      margin-left: 5%;
+      position:absolute;
+      height: 15rem;
+      left: 1%;
+     /* border: 2px solid red; */
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      color:  rgb(216, 125, 64);
+      text-align: center;
+      display: block;
+
+    }
+    .project-2{
+      margin-top: 18rem;
+      width: 72vmax;
+      height: 20%;
+      margin-left: 5%;
+      position:absolute;
+      height: 15rem;
+      left: 1%;
+     /* border: 2px solid red; */
+      color:  rgb(216, 125, 64);
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .project-image{
+      margin-top: 2%;
+      width: 40%;
+      position:absolute;
+      height: 80%;
+      left: 5%;
+     /* border: 5px inset red; */
+      color:  rgb(216, 125, 64);
+      text-align: center;
+    }
+    .project-image img{
+      width: 14rem;
+      height: auto;
+      object-fit: cover;
+      
+    }
+    .project-details{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      width: 45%;
+      margin-left: 50%;
+      /* position:absolute;
+      height: 66%;
+      left: 50%; */
+     /* border: 5px outset red; */
+     
+      color:  rgb(216, 125, 64);
+      text-align: center;
+    }
+    .details{
+      margin: -5px;
+      font-size: 1.3rem;
+    }
+    .project-name{
+      font-size: 1.5rem;
+      color: crimson;
+    }
+    .zoom {
+  
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+  </style>
+  <div class="nav">
+     <h2 class="nav-header"> 107 - Projects</h2>
+    </div>
+  <div class="container">
+    <div class="projects">
+      <div class="project">
+        <div class="project-image">
+          <a target="blank" href="https://krishnakantkr.github.io/107-projects/1.notification.html"> <img class="zoom" src="01.notification.png"> </a>
+        </div>
+        <div class="project-details">
+         <h3 class="project-name">Notification</h3>
+         <!-- <p class="details">Details : </p> -->
+         <p>Push Notify ,show count of clicks</p>
+        </div>
+      </div>
+      <div class="project-2">
+        <div class="project-image ">
+         <a target="blank" href="https://krishnakantkr.github.io/107-projects/2.sidemenubar.html"><img class="zoom"  src="./sidebarmenu.png"></a> 
+        </div>
+        <div class="project-details">
+         <h3 class="project-name">Side Menu Bar</h3>
+         <!-- <p class="details">Details : </p> -->
+         <p>Side Menu Bar</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
